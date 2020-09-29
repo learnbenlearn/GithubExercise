@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_Unloader</fullName>
+    <active>true</active>
+    <description>Only Unloaders can be here!</description>
+    <errorConditionFormula>AND(Unloader__r.Profile.Name &lt;&gt; &apos;Custom Loader&apos;,   NOT(ISBLANK(Unloader__r.Profile.Name)))</errorConditionFormula>
+    <errorMessage>Only Unloaders can be here!</errorMessage>
+</ValidationRule>
