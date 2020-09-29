@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Rename</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISCHANGED( Name ) ,( $UserRole.Name &lt;&gt; &apos;Postal Service Admin&apos;))</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Insufficient permissions to rename object.</errorMessage>
+</ValidationRule>
