@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>ExampleDML</members>
+        <members>ExampleSOQL</members>
+        <members>MailTriggerHandler</members>
+        <members>SOQLDataFactory</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>MailTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <name>AssignmentRules</name>
+    </types>
+    <types>
+        <members>Case</members>
+        <name>AutoResponseRules</name>
+    </types>
+    <types>
+        <members>Distribution_Center__c</members>
+        <members>Vehicle__c</members>
+        <members>Vehicle_Schedule__c</members>
+        <members>Case</members>
+        <members>Mail__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Distribution_Center__c</members>
+        <members>Vehicle__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>States</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <types>
+        <members>Distribution_Center__c-Distribution Center Layout</members>
+        <members>Vehicle__c-Vehicle Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Vehicles_Origin</members>
+        <name>ReportType</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <members>Custom Operations Manager</members>
+        <members>Custom Loader</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Vehicle_Manager</members>
+        <name>PermissionSet</name>
+    </types>
+    <version>49.0</version>
+</Package>

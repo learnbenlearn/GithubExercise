@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_Admins</fullName>
+    <active>true</active>
+    <description>Only admins can change Mail name</description>
+    <errorConditionFormula>$User.ProfileId &lt;&gt; &apos;System Administrator&apos; &amp;&amp; ISCHANGED(Name)</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Only System Admins can change Mail name.</errorMessage>
+</ValidationRule>
