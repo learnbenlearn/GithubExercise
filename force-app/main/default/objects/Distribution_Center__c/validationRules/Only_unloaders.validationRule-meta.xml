@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Only_unloaders</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(Unloader__r.Profile.Name &lt;&gt; &apos;Custom Loader&apos;,   NOT(ISBLANK(Unloader__r.Profile.Name)))</errorConditionFormula>
+    <errorDisplayField>Unloader__c</errorDisplayField>
+    <errorMessage>&quot;Only unloaders can be entered in this field&quot;</errorMessage>
+</ValidationRule>
