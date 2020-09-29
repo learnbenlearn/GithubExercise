@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_Insured_Require_Value</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Insurance__c = TRUE , ISNULL(Value__c) )</errorConditionFormula>
+    <errorDisplayField>Insurance__c</errorDisplayField>
+    <errorMessage>If the package is insured, it must be given a value for potential payouts.</errorMessage>
+</ValidationRule>
