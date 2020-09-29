@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Case Created</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Missing Mail</value>
+            </criteriaItems>
+            <replyToEmail>jholla20@uw.edu</replyToEmail>
+            <senderEmail>jholla20@uw.edu</senderEmail>
+            <senderName>Created</senderName>
+            <template>unfiled$public/Missing_Mail_Auto</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>
